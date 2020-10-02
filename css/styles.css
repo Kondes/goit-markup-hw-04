@@ -111,7 +111,6 @@ img {
 .header-mail,
 .header-tel {
   display: block;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -124,8 +123,18 @@ img {
 /*-----END HEADER-----*/
 
 /*------MAIN------*/
+.overlay {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main/Overlay.jpg);
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .services {
-  background: var(--background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -161,6 +170,27 @@ img {
 .list-quality:not(:last-child) {
   margin-right: 30px;
 }
+.list-quality::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--other-color);
+}
+.icon-group::before {
+  background-image: url(../images/quality/Group.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/quality/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/quality/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/quality/astronaut.svg);
+}
+
 .list-forms {
   display: flex;
   justify-content: space-between;
@@ -176,7 +206,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
