@@ -417,9 +417,51 @@ img {
   letter-spacing: 0.03em;
   color: var(--contacts-color);
 }
+.first-footer {
+  display: flex;
+  align-items: baseline;
+}
+.second-footer {
+  margin-left: 70px;
+}
+.list-icon {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-social {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-footer:hover {
+  background-color: var(--accent-color);
+}
+.footer-svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
 
-.proba {
-  text-align: center;
+.icon-footer-list:not(:last-child) {
+  margin-right: 10px;
+}
+.all-footer {
+  display: flex;
+  align-items: baseline;
 }
 
 /*------END FOOTER------*/
