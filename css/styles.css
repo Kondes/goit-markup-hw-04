@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
@@ -68,7 +68,7 @@ img {
   margin-left: auto;
 }
 .list-telephone {
-  margin-left: 48px;
+  margin-left: 30px;
 }
 
 .logo {
@@ -119,7 +119,24 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.list-icon-header {
+  fill: var(--primary-text-color);
+}
+.header-mail:hover .list-icon-header {
+  fill: var(--accent-color);
+}
+.header-tel:hover .list-icon-header {
+  fill: var(--accent-color);
+}
+.list-icon-header {
+  margin-right: 10px;
+}
 /*-----END HEADER-----*/
 
 /*------MAIN------*/
@@ -225,6 +242,7 @@ img {
 
 .picture-list {
   display: flex;
+  justify-content: space-between;
 }
 .about-us,
 .team {
@@ -315,6 +333,46 @@ img {
   margin-top: 10px;
   margin-bottom: 16px;
 }
+
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.all-clients {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.our-clients {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.list-clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.list-clients:hover .clients-svg {
+  fill: var(--accent-color);
+}
+.list-clients-item:hover {
+  border: 1px solid var(--accent-color);
+}
+.clients-svg {
+  fill: #afb1b8;
+}
+
 /*------END MAIN------*/
 
 /*------FOOTER------*/
@@ -358,6 +416,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
+}
+
+.proba {
+  text-align: center;
 }
 
 /*------END FOOTER------*/
