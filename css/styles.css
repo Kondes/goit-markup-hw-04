@@ -10,6 +10,8 @@
   --other-color: #f5f4fa;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --background-color: #2f303a;
+  --svg-team-icon-color: #afb1b8;
+  --footer-hover-color: white;
 }
 
 *,
@@ -64,6 +66,7 @@ img {
 }
 .navigation-second {
   display: flex;
+
   justify-content: flex-end;
   margin-left: auto;
 }
@@ -110,7 +113,8 @@ img {
 
 .header-mail,
 .header-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -146,6 +150,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/main/Overlay.jpg);
+  background-color: var(--logo-color);
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -261,13 +266,13 @@ img {
   border-radius: 50px;
 }
 .icon-list-team:hover .team-svg {
-  fill: white;
+  fill: var(--footer-hover-color);
 }
 .icon-list-team:hover {
   background-color: var(--accent-color);
 }
 .team-svg {
-  fill: #afb1b8;
+  fill: var(--svg-team-icon-color);
   width: 20px;
   height: 20px;
 }
@@ -321,7 +326,7 @@ img {
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: white;
+  background-color: var(--footer-hover-color);
 }
 .team-profil {
   font-weight: 400;
@@ -359,18 +364,18 @@ img {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-team-icon-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.list-clients:hover .clients-svg {
+.list-clients-item:hover .clients-svg {
   fill: var(--accent-color);
 }
 .list-clients-item:hover {
   border: 1px solid var(--accent-color);
 }
 .clients-svg {
-  fill: #afb1b8;
+  fill: var(--svg-team-icon-color);
 }
 
 /*------END MAIN------*/
@@ -435,7 +440,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--footer-hover-color);
 }
 .icon-footer {
   display: flex;
@@ -453,7 +458,7 @@ img {
   display: flex;
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: var(--footer-hover-color);
 }
 
 .icon-footer-list:not(:last-child) {
@@ -520,7 +525,10 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.border:hover {
+.shadow {
+  display: block;
+}
+.shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
